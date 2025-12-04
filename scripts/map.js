@@ -1,7 +1,7 @@
 var map, layer
 var gridBounds = new OpenLayers.Bounds(-550.0, -550.0, 550.0, 550.0);
 //var pic = "http://map.theriansaga-wiki.ru/";
-//var pic = "http://thesaga.mcwees.ru/";
+//var pic = "http://therian-wiki.phoenix.by/";
 var pic = "/";
 
 
@@ -253,7 +253,7 @@ function onFeatureSelect(feature) {
   if (!(typeof feature.attributes.wikiAdd === 'undefined')) {
     wiki_link=feature.attributes.title + feature.attributes.wikiAdd;
   } 
-  if (lang=='ru') popup_text += "<br /><a href=\"http://thesaga.mcwees.ru/places/"+encodeURIComponent(wiki_link)+".html\" target=\"_blank\">Описание</a>";
+  if (lang=='ru') popup_text += "<br /><a href=\"http://therian-wiki.phoenix.by/places/"+encodeURIComponent(wiki_link)+".html\" target=\"_blank\">Описание</a>";
   popup_text += "</div>";
 
   var popup = new OpenLayers.Popup.FramedCloud(

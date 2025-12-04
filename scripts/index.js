@@ -17,7 +17,7 @@
 function SetLang(lang)
 {
   setCookie('lang',lang.value,90);
-  window.location.href = 'http://thesaga.mcwees.ru/';
+  window.location.href = 'http://therian-wiki.phoenix.by/';
   //location.reload(true);
 };
 

@@ -253,7 +253,7 @@ function onFeatureSelect(feature) {
   if (!(typeof feature.attributes.wikiAdd === 'undefined')) {
     wiki_link=feature.attributes.title + feature.attributes.wikiAdd;
   } 
-  if (lang=='ru') popup_text += "<br /><a href=\"http://therian-wiki.phoenix.by/places/"+encodeURIComponent(wiki_link)+".html\" target=\"_blank\">Описание</a>";
+  if (lang=='ru') popup_text += "<br /><a href=\"http://therian-wiki.phoenix.by/"+encodeURIComponent(wiki_link)+".html\" target=\"_blank\">Описание</a>";
   popup_text += "</div>";
 
   var popup = new OpenLayers.Popup.FramedCloud(
